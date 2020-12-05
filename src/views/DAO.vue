@@ -9,7 +9,7 @@
       </header>
       <h2>Purchase $PGOV</h2>
       <div class="progress-bar progress-bar-show-percent">
-        <div class="progress-bar-filled" style="width: 30%" data-filled="7.51/25 ETH Sold"></div>
+        <div class="progress-bar-filled" style="width: 0%" data-filled="0/25 ETH Sold"></div>
       </div>
       <form @submit.prevent.stop>
         <fieldset>
@@ -25,6 +25,8 @@
       </form>
       <br>
       <h2>PGOV Sale ETH Allocation</h2>
+      <p>The purchase of PGOV Tokens is not a financial investment and market value is not garunteed by ProspectReserved. $PGOV is an utility token that is used for governance in the ecosystem via vote by burn.</p>
+      <br>
       <div class="progress-bar progress-bar-show-percent">
         <div class="progress-bar-filled" style="width: 20%" data-filled="PRES Liquidity: 5 ETH"></div>
       </div>
@@ -38,6 +40,7 @@
         <div class="progress-bar-filled" style="width: 40%" data-filled="Development: 10 ETH"></div>
       </div>
     </section>
+    <br>
   </div>
 </template>
 

@@ -19,19 +19,19 @@
         <div class="terminal-card">
           <header>Prospect Gems ($PGEM)</header>
           <div>
-            ...
+            Prospect Gems are the gaming chips of the ecosystem. $PGEM are issued by providing $PRES for a Gem Bond, which mature into $PGEM at different timeframes depending on your time preference and user demand. The base function of $PGEMS before intergrating with games will be their ability to burn for Ether, with up to 10,000% the $PGOV cost to create. Transfers have a 10% transfer fee, which will fund the redemption jackpot.
           </div>
         </div>
         <div class="terminal-card">
           <header>Dynamic Burn And Token Price Floor</header>
           <div>
-            ...
+            Since PRES holds the liquidity for the platform it is important to stablize and grow the price of the token as the platform grows. Dynamic burn rates on transactions and the ability to mint and redeem tokens for a base price will force this to happen, regardless of the liquidity on Uniswap and dampens the effects of price manipulation. The dynamic burn will cause an arbritage oportunity between Uniswap prices and inbuilt mint & redeem features. The calculation for the dynamic burn rate is: 5% base fee, when Uniswap price is greater than 10% of the base minting price the fee is 50% of the price difference.
           </div>
         </div>
         <div class="terminal-card">
           <header>Prospect Governance Token ($PGOV)</header>
           <div>
-            ...
+            $PGOV is an utility token that is used for governance in the ecosystem via vote by burn. PGOV will be issued to users for participating in the ecosystem. Earn PGOV for issuing PGEM's and providing liquidity. 
           </div>
         </div>
       </div>
