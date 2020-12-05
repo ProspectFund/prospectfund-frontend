@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <h1>Ever growing price floor<br>Transactions dynamically burn supply<br>Mine Gems with up to a 10,000% ROI</h1>
-    <button class="btn btn-primary"><img style="width: 30px; padding: 5px" src="@/assets/icons/telegram-plane-brands.svg">Telegram</button>
+    <a target="blank" href="https://t.me/prospectfund"><button class="btn btn-primary"><img style="width: 30px; padding: 5px" src="@/assets/icons/telegram-plane-brands.svg">Telegram</button></a>
     <hr>
     <section>
       <header>

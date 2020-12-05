@@ -1,9 +1,9 @@
 <template>
   <div class="home">
     <h1>Ever growing price floor<br>Transactions dynamically burn supply<br>Mine Gems with up to a 10,000% ROI</h1>
-    <button class="btn btn-primary" style="margin: 5px"><img style="width: 30px; padding: 5px" src="@/assets/icons/telegram-plane-brands.svg">Telegram</button>
+    <a target="blank" href="https://t.me/prospectfund"><button class="btn btn-primary"><img style="width: 30px; padding: 5px" src="@/assets/icons/telegram-plane-brands.svg">Telegram</button></a>
     <br>
-    <button @click="$router.push('/dao')"  class="btn btn-default btn-ghost" style="margin: 5px; height: 54px">$PGOV Presale Live</button>
+    <button @click="$router.push('/dao')"  class="btn btn-default btn-ghost" style="margin-top: 5px; height: 54px">$PGOV Presale Live</button>
     <hr>
     <section>
       <header>
