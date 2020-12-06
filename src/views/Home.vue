@@ -13,19 +13,19 @@
         <div class="terminal-card">
           <header>Prospect Reserve Token ($PRES)</header>
           <div>
-            Prospect Reserve Token holds the liquidity, in the form of Ether, for the whole platform. These tokens have a dynamic transaction burn, from a base of 5% to a maxium of 50% depending on the current Uniswap price, this dynamic burn will help stablize price by creating arbritage oportunities between the redeem value and Uniswap price. The maximum supply is 10,000 $PRES, and can be minted with Ether. PRES Can be redeemed for Ether at anytime or sold on Uniswap. 
+            Prospect Reserve Token holds the liquidity, in the form of Ether, for the whole platform. These tokens have a dynamic transaction burn, from a base of 5% to a maximum of 50% depending on the current Uniswap price, this dynamic burn will help stabilize price by creating arbitrage opportunities between the redeem value and Uniswap price. The maximum supply is 10,000 $PRES, and can be minted with Ether. PRES Can be redeemed for Ether at anytime or sold on Uniswap. 
           </div>
         </div>
         <div class="terminal-card">
           <header>Prospect Gems ($PGEM)</header>
           <div>
-            Prospect Gems are the gaming chips of the ecosystem. $PGEM are issued by providing $PRES for a Gem Bond, which mature into $PGEM at different timeframes depending on your time preference and user demand. The base function of $PGEMS before intergrating with games will be their ability to burn for Ether, with up to 10,000% the $PGOV cost to create. Transfers have a 10% transfer fee, which will fund the redemption jackpot.
+            Prospect Gems are the gaming chips of the ecosystem. $PGEM are issued by providing $PRES for a Gem Bond, which mature into $PGEM at different time frames depending on your time preference and user demand. The base function of $PGEMS before integrating with games will be their ability to burn for Ether, with up to 10,000% the $PGOV cost to create. Transfers have a 10% transfer fee, which will fund the redemption jackpot.
           </div>
         </div>
         <div class="terminal-card">
           <header>Dynamic Burn And Token Price Floor</header>
           <div>
-            Since PRES holds the liquidity for the platform it is important to stablize and grow the price of the token as the platform grows. Dynamic burn rates on transactions and the ability to mint and redeem tokens for a base price will force this to happen, regardless of the liquidity on Uniswap and dampens the effects of price manipulation. The dynamic burn will cause an arbritage oportunity between Uniswap prices and inbuilt mint & redeem features. The calculation for the dynamic burn rate is: 5% base fee, when Uniswap price is greater than 10% of the base minting price the fee is 50% of the price difference.
+            Since PRES holds the liquidity for the platform it is important to stabilize and grow the price of the token as the platform grows. Dynamic burn rates on transactions and the ability to mint and redeem tokens for a base price will force this to happen, regardless of the liquidity on Uniswap and dampens the effects of price manipulation. The dynamic burn will cause an arbitrage opportunity between Uniswap prices and inbuilt mint & redeem features. The calculation for the dynamic burn rate is: 5% base fee, when Uniswap price is greater than 10% of the base minting price the fee is 50% of the price difference.
           </div>
         </div>
         <div class="terminal-card">

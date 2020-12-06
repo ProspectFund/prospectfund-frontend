@@ -25,7 +25,7 @@
       </form>
       <br>
       <h2>PGOV Sale ETH Allocation</h2>
-      <p>The purchase of PGOV Tokens is not a financial investment and market value is not garunteed by ProspectReserved. $PGOV is an utility token that is used for governance in the ecosystem via vote by burn.</p>
+      <p>The purchase of PGOV Tokens is not a financial investment and market value is not guaranteed by ProspectFund. $PGOV is an utility token that is used for governance in the ecosystem via vote by burn.</p>
       <br>
       <div class="progress-bar progress-bar-show-percent">
         <div class="progress-bar-filled" style="width: 20%" data-filled="PRES Liquidity: 5 ETH"></div>
