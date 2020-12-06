@@ -17,8 +17,10 @@
           <legend>Purchase</legend>
           <div class="form-group">
             <label for="itext">ETH Amount</label>
-            <input id="itext" name="itext" type="text" v-model="buyAmount" />
+            <input id="itext" name="itext" type="number" v-model="buyAmount" />
           </div>
+          <h4 v-if="buyAmount">{{ buyAmount }} ETH = {{ 100 * buyAmount }} PGOV</h4>
+          <h4 v-else>1 ETH = 100 PGOV</h4>
           <div class="form-group">
             <button @click="buy" class="btn btn-default" role="button" name="submit" id="submit">Buy PGOV</button>
           </div>
