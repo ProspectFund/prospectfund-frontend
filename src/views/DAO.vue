@@ -9,17 +9,17 @@
       </header>
       <h2>Purchase $PGOV</h2>
       <div class="progress-bar progress-bar-show-percent">
-        <div class="progress-bar-filled" style="width: 0%" data-filled="0/25 ETH Sold"></div>
+        <div class="progress-bar-filled" :style="soldPercent" :data-filled="soldAmount"></div>
       </div>
       <form @submit.prevent.stop>
         <fieldset>
           <legend>Purchase</legend>
           <div class="form-group">
             <label for="itext">ETH Amount</label>
-            <input id="itext" name="itext" type="text" />
+            <input id="itext" name="itext" type="text" v-model="buyAmount" />
           </div>
           <div class="form-group">
-            <button class="btn btn-default" role="button" name="submit" id="submit">Buy PGOV</button>
+            <button @click="buy" class="btn btn-default" role="button" name="submit" id="submit">Buy PGOV</button>
           </div>
         </fieldset>
       </form>
@@ -45,7 +45,37 @@
 </template>
 
 <script>
+import { providers, Contract, utils } from 'ethers';
+import presaleABI from "@/assets/abi/presale.json";
+const presaleAddress = "0x43d97E6742f135Cd05a8665479f21fCd124C06e2";
+
 export default {
   name: 'Governance',
+  data() {
+    return {
+      soldAmount: "0.00/25 ETH Sold",
+      soldPercent: "width: 0.00%",
+      buyAmount: undefined
+    }
+  },
+  methods: {
+    buy() {
+      window.ethereum.request({ method: 'eth_requestAccounts' }).then(() => {
+        const signer = new providers.Web3Provider(window.ethereum).getSigner();
+        const presaleContract = new Contract(presaleAddress, presaleABI, signer);
+        const value = utils.parseEther(this.buyAmount);
+        presaleContract.buy({ value });
+      })
+    }
+  },
+  mounted() {
+    const defaultProvider = new providers.getDefaultProvider();
+    const presaleContract = new Contract(presaleAddress, presaleABI, defaultProvider);
+    presaleContract.soldEth().then(r => {
+      const eth = Number(utils.formatEther(r)).toFixed(2);
+      this.soldAmount = `${eth}/25 ETH Sold`;
+      this.soldPercent = `width: ${Number((Number(eth) / 25) * 100).toFixed(2)}%`;
+    })
+  }
 }
 </script>
