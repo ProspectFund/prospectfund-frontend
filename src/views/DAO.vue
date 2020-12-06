@@ -6,27 +6,11 @@
     <hr>
     <section>
       <header>
-        <h2 id="Timeline">Presale In Progress</h2>
+        <h2>Purchase $PGOV</h2>
       </header>
-      <h2>Purchase $PGOV</h2>
-      <div class="progress-bar progress-bar-show-percent">
-        <div class="progress-bar-filled" :style="soldPercent" :data-filled="soldAmount"></div>
-      </div>
-      <form @submit.prevent.stop>
-        <fieldset>
-          <legend>Purchase</legend>
-          <div class="form-group">
-            <label>ETH Amount</label>
-            <input id="itext" name="itext" type="text" v-model="buyAmount" />
-          </div>
-          <h4 v-if="buyAmount">{{ buyAmount }} ETH = {{ 100 * buyAmount }} PGOV</h4>
-          <h4 v-else>1 ETH = 100 PGOV</h4>
-          <div class="form-group">
-            <button @click="buy" class="btn btn-default" role="button" name="submit" id="submit">Buy PGOV</button>
-          </div>
-        </fieldset>
-      </form>
+      <a target="blank" href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x8f339cead5c2463ff5fe2426faa708ea9eaef441"><button class="btn btn-primary">Buy on Uniswap</button></a>
       <br>
+      <hr>
       <h2>PGOV Sale ETH Allocation</h2>
       <p>The purchase of PGOV Tokens is not a financial investment and market value is not guaranteed by ProspectFund. $PGOV is an utility token that is used for governance in the ecosystem via vote by burn.</p>
       <br>
