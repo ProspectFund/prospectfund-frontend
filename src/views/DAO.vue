@@ -8,7 +8,12 @@
       <header>
         <h2>Purchase $PGOV</h2>
       </header>
-      <a target="blank" href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x8f339cead5c2463ff5fe2426faa708ea9eaef441"><button class="btn btn-primary">Buy on Uniswap</button></a>
+      <iframe
+        src="https://app.uniswap.org/#/swap?outputCurrency=0x8f339cead5c2463ff5fe2426faa708ea9eaef441"
+        height="600px"
+        width="100%"
+      style="border: 0; margin: 0 auto; display: block; border-radius: 10px; max-width: 600px; min-width: 300px;"
+      />
       <br>
       <hr>
       <h2>PGOV Sale ETH Allocation</h2>
