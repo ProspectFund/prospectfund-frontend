@@ -13,7 +13,8 @@ const routes = [
   {
     path: "/wallet",
     name: "Wallet",
-    component: () => import(/* webpackChunkName: "about" */ "../views/DAO.vue"),
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/Wallet.vue"),
   },
   {
     path: "/mine",
