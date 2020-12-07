@@ -25,7 +25,7 @@
       <div class="terminal-card">
         <header>Wallet Balances</header>
         <div style="text-align: center">
-          <h2><strong>PRES </strong> {{ presBalance }} (<a href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0xa8A7466E616F387C690963fbBED1eB4d0A9db91e" target="_blank">Uniswap</a>)</h2>
+          <h2><strong>PRES </strong> {{ presBalance }} (<a href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x30E08EAf7E641D89276043CEBC5E324Bd11c2147" target="_blank">Uniswap</a>)</h2>
           <h2><strong>PGEM </strong> 0.00 (Uniswap Coming Soon)</h2>
           <h2><strong>PGOV </strong> {{ pgovBalance }} (<a href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x8f339cead5c2463ff5fe2426faa708ea9eaef441" target="_blank">Uniswap</a>)</h2>
         </div>
@@ -91,7 +91,7 @@ import { providers, Contract, utils, BigNumber } from 'ethers';
 import presABI from "@/assets/abi/pres.json";
 import uniswapPairABI from "@/assets/abi/uniswapPair.json";
 
-const presAddress = "0xa8A7466E616F387C690963fbBED1eB4d0A9db91e";
+const presAddress = "0x30E08EAf7E641D89276043CEBC5E324Bd11c2147";
 const pgovAddress = "0x8f339CEAd5c2463Ff5Fe2426FAa708ea9eAeF441"
 
 export default {
