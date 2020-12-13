@@ -140,7 +140,7 @@ export default {
       const presContract = new Contract(presAddress, presABI, signer);
       const pgovContract = new Contract(pgovAddress, presABI, signer);
       const pgovLiqContract = new Contract("0x82D324e710c7c72A196ca1838480665f5Bc85026", uniswapPairABI, signer);
-      const presLiqContract = new Contract("0xe1420b0add4c9fc136765dd028baebc6b500aac2", uniswapPairABI, signer);
+      const presLiqContract = new Contract("0x504c5e0a7c7b773e9ec9cc46e321dd5e69264fa2", uniswapPairABI, signer);
       presContract.balanceOf(this.walletAddress).then(r => this.presBalance = Number(utils.formatEther(r)).toFixed(2));
       presContract.baseValue().then(r => this.basePrice = Number(utils.formatEther(r)).toFixed(4));
       presContract.fee().then(r => this.transferFee = Number((1 - Number(utils.formatEther(r))) * 100).toFixed(2));
