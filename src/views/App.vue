@@ -88,7 +88,7 @@
           <input type="number" v-model="burnInput"/>
         </div>
         <div class="form-group">
-          <label>Your PRES Balance: {{ balance }}</label>
+          <label>Your PROSPECT Balance: {{ balance }}</label>
         </div>
         <div class="form-group">
           <label>Base Price: {{ basePrice }} BNB</label>
