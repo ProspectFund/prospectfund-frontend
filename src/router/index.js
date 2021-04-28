@@ -11,20 +11,10 @@ const routes = [
     component: Home,
   },
   {
-    path: "/wallet",
-    name: "Wallet",
+    path: "/app",
+    name: "App",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Wallet.vue"),
-  },
-  {
-    path: "/mine",
-    name: "Mine",
-    component: () => import(/* webpackChunkName: "about" */ "../views/DAO.vue"),
-  },
-  {
-    path: "/dao",
-    name: "Governance",
-    component: () => import(/* webpackChunkName: "about" */ "../views/DAO.vue"),
+      import(/* webpackChunkName: "about" */ "../views/App.vue"),
   },
 ];
 

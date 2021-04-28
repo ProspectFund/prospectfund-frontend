@@ -1,8 +1,8 @@
 <template>
   <div class="home">
-    <h1>ProspectFund, Self Regulating Liquidity for Gaming</h1>
-    <h2>Ever growing price floor<br>Transactions dynamically burn supply<br>Mine Gems with up to a 10,000% ROI</h2>
-    <router-link to="/wallet"><button class="btn btn-default">Open Wallet</button></router-link>
+    <h1>ProspectFund, Gamified deflationary token</h1>
+    <h2>Insurance fund backed price floor<br>Dynamic burn rate<br>Burn tokens with up to a 10,000% ROI paid in BNB</h2>
+    <router-link to="/app"><button class="btn btn-default">Open App</button></router-link>
     <br>
     <br>
     <a target="blank" href="https://t.me/prospectfund"><button class="btn btn-primary"><img style="width: 30px; padding: 5px" src="@/assets/icons/telegram-plane-brands.svg">Telegram</button></a>
@@ -10,31 +10,28 @@
     <hr>
     <section>
       <header>
-        <h2 id="Timeline">Project Features</h2>
+        <h2 id="Timeline">Project Road Map</h2>
       </header>
       <div class="terminal-timeline">
         <div class="terminal-card">
-          <header>Prospect Reserve Token ($PRES)</header>
+          <header>Trade in and lock liquidity for PROSPECT</header>
           <div>
-            Prospect Reserve Token holds the liquidity, in the form of Ether, for the whole platform. These tokens have a dynamic transaction burn, from a base of 5% to a maximum of 50% depending on the current Uniswap price, this dynamic burn will help stabilize price by creating arbitrage opportunities between the redeem value and Uniswap price. The maximum supply is 10,000 $PRES, and can be minted with Ether. PRES Can be redeemed for Ether at anytime or sold on Uniswap. 
+            Tokens will be issued at 1000 PROSPECT per BNB, with a maximum of 100 BNB raised.
+            After 100 BNB is reached, liquidity will be created and locked and tokens will be tradeable.
+            50 BNB will be added to Pancake Pool liquidity at the rate of 750 PROSPECT per BNB, The remaining 50 BNB will go to the insurance fund.
           </div>
         </div>
         <div class="terminal-card">
-          <header>Prospect Gems ($PGEM)</header>
+          <header>Insurance Fund Activated</header>
           <div>
-            Prospect Gems are the gaming chips of the ecosystem. $PGEM are issued by providing $PRES for a Gem Bond, which mature into $PGEM at different time frames depending on your time preference and user demand. The base function of $PGEMS before integrating with games will be their ability to burn for Ether, with up to 10,000% the $PGOV cost to create. Transfers have a 10% transfer fee, which will fund the redemption jackpot.
+            The Insurance fund will allow users to sell back their PROSPECT for BNB at the insurance fund rate, setting a miniumum price floor.
+            Users will also be able to mint new PROSPECT with BNB at 10% above the insurance fund rate.
           </div>
         </div>
         <div class="terminal-card">
-          <header>Dynamic Burn And Token Price Floor</header>
+          <header>Burn Lottery Released</header>
           <div>
-            Since PRES holds the liquidity for the platform it is important to stabilize and grow the price of the token as the platform grows. Dynamic burn rates on transactions and the ability to mint and redeem tokens for a base price will force this to happen, regardless of the liquidity on Uniswap and dampens the effects of price manipulation. The dynamic burn will cause an arbitrage opportunity between Uniswap prices and inbuilt mint & redeem features. The calculation for the dynamic burn rate is: 5% base fee, when Uniswap price is greater than 10% of the base minting price the fee is 50% of the price difference.
-          </div>
-        </div>
-        <div class="terminal-card">
-          <header>Prospect Governance Token ($PGOV)</header>
-          <div>
-            $PGOV is an utility token that is used for governance in the ecosystem via vote by burn. PGOV will be issued to users for participating in the ecosystem. Earn PGOV for issuing PGEM's and providing liquidity. 
+            Users will able to burn their PROSPECT tokens for up to 100x their value back in BNB, the BNB will grow from burns and transaction.
           </div>
         </div>
       </div>
