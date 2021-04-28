@@ -197,7 +197,7 @@ export default {
         const _reserve1 = r[1].toString();
         this.ProspectBNBPrice = Number(utils.formatEther(BigNumber.from(_reserve1).mul("1000000000000000000").div(BigNumber.from(_reserve0))))
       })
-      prospectLiqContract.balanceOf(this.walletAddress).then(r => this.lpBalance = Number(utils.formatEther(r)).toFixed(2));
+      prospectLiqContract.balanceOf(this.walletAddress).then(r => this.lpBalance = Number(utils.formatEther(r)).toFixed(6));
       prospectLiqContract.allowance(this.walletAddress, prospectAddress).then(r => this.approvedLPToLock = Number(utils.formatEther(r)));
       Promise.all([
         prospectContract.balanceOf(prospectBNBPairAddress).then(r => this.prospectInLP = r),
