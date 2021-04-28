@@ -71,7 +71,7 @@
           <label>Max Mint Amount: {{ 100000 - totalSupply }}</label>
         </div>
         <div class="form-group">
-          <label>Base Price: {{ basePrice }} Ether</label>
+          <label>Base Price: {{ basePrice }} BNB</label>
         </div>
         <div v-show="mintInput" class="form-group">
           <label>{{ mintInput }} PROSPECT = {{ Number(basePrice * mintInput).toFixed(6) }} BNB</label>
