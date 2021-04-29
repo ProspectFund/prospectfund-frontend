@@ -173,13 +173,14 @@ export default {
             this.signer = new providers.Web3Provider(window.ethereum);
             this.walletAddress = window.ethereum.selectedAddress;
             this.connected = true;
+            this.loadData();
           })
         } else {
           this.signer = new providers.Web3Provider(window.ethereum);
           this.walletAddress = window.ethereum.selectedAddress;
           this.connected = true;
+          this.loadData();
         }
-        this.loadData();
       })
     },
     disconnect() {
