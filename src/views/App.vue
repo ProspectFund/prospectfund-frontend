@@ -131,7 +131,7 @@ export default {
     return {
       outputAddress: prospectAddress,
       connected: !window.ethereum || !window.ethereum.selectedAddress ? false : true,
-      walletAddress: !window.ethereum || !window.ethereum.selectedAddress ? "..." : window.ethereum.selectedAddress,
+      walletAddress: null,
       signer: undefined,
       mintInput: undefined,
       sellLPInput: undefined,
@@ -153,9 +153,32 @@ export default {
   methods: {
     connect() {
       window.ethereum.request({ method: 'eth_requestAccounts' }).then(() => {
-        this.connected = true;
-        this.signer = new providers.Web3Provider(window.ethereum);
-        this.walletAddress = window.ethereum.selectedAddress;
+        if (window.ethereum['chainId'] != '0x38') {
+          window.ethereum.request({
+          method: 'wallet_addEthereumChain',
+          params: [
+            {
+              chainId: '0x38',
+              chainName: 'Binance Smart Chain Mainnet',
+              nativeCurrency: {
+                name: 'BNB',
+                symbol: 'bnb',
+                decimals: 18,
+              },
+              rpcUrls: ['https://bsc-dataseed1.ninicoin.io'],
+              blockExplorerUrls: ['https://bscscan.com/'],
+            },
+          ],
+          }).then(() => {
+            this.signer = new providers.Web3Provider(window.ethereum);
+            this.walletAddress = window.ethereum.selectedAddress;
+            this.connected = true;
+          })
+        } else {
+          this.signer = new providers.Web3Provider(window.ethereum);
+          this.walletAddress = window.ethereum.selectedAddress;
+          this.connected = true;
+        }
         this.loadData();
       })
     },
