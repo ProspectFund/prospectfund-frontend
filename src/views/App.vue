@@ -130,7 +130,7 @@ export default {
   data() {
     return {
       outputAddress: prospectAddress,
-      connected: !window.ethereum || !window.ethereum.selectedAddress ? false : true,
+      connected: false,
       walletAddress: null,
       signer: undefined,
       mintInput: undefined,
@@ -251,7 +251,7 @@ export default {
     }
   },
   mounted() {
-    this.loadData();
+//     this.loadData();
   }
 }
 </script>
